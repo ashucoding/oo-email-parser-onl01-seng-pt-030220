@@ -9,6 +9,6 @@ class EmailAddressParser
   def parse
     @email.split.map do |address|
       address.split(',')
-  end
+  end.flatten.uniq
 end
 end
