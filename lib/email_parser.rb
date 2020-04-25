@@ -7,8 +7,8 @@ class EmailAddressParser
   end
   
   def parse
-    @email.split.map do
-      
+    @email.split.map do |email|
+      email
   end
 end
 end
